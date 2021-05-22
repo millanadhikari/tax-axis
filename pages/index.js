@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Main from '../components/Main'
 import Features from '../components/Features'
 import {signIn, signOut, useSession} from 'next-auth/client'
-import Taxreturn from './Taxreturn';
+import Taxreturn from './taxreturn';
 import { useRouter } from "next/router";
 
 
