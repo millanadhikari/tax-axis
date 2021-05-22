@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react'
-import { HiMenuAlt3 } from 'react-icons/Hi';
-import { AiOutlineCloseCircle } from 'react-icons/Ai'
+import {MenuIcon} from '@heroicons/react/solid'
+import { ArrowRightIcon } from '@heroicons/react/solid'
 import { useRouter } from 'next/router'
 import { getProviders, useSession, signOut, getSession } from 'next-auth/client'
 
@@ -38,8 +38,8 @@ function Navbar() {
             }
               {!session ?
                  <div className="sm:hidden">
-                    {openMenu ? <AiOutlineCloseCircle onClick={() => setOpenMenu(!openMenu)} className="h-[35px] w-[45px] cursor-pointer sm:hidden" /> :
-                        <HiMenuAlt3 onClick={() => setOpenMenu(!openMenu)} className="h-[35px] w-[45px] cursor-pointer sm:hidden" />
+                    {openMenu ? <ArrowRightIcon onClick={() => setOpenMenu(!openMenu)} className="h-[35px] w-[45px] cursor-pointer sm:hidden" /> :
+                        <MenuIcon onClick={() => setOpenMenu(!openMenu)} className="h-[35px] w-[45px] cursor-pointer sm:hidden" />
                     }
                 </div> :
                 <div className="h-10 w-10 cursor-pointer">
