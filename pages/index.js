@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Main from '../components/Main'
 import Features from '../components/Features'
 import {signIn, signOut, useSession} from 'next-auth/client'
-import Taxreturn from './taxreturn';
 import { useRouter } from "next/router";
+import Dashboard from '../components/Dashboard';
 
 
 export default function Home() {
@@ -18,7 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      {session ? <Taxreturn/>
+      {session ? 
+      <Dashboard/>
       :
        
       <div>

@@ -23,6 +23,7 @@ function bottomNav() {
             gap-8 items-center bg-white ring-1 ring-gray-600 text-blue-900  
             cursor-pointer font-bold md:absolute md:top-40 md:left-10 md:bottom-80 md:h-40 md:flex-col
             md:bg-transparent">
+                <BottomIcon  Icon={DocumentDuplicateIcon} title="Dashboard" link="/" />
                 <BottomIcon  Icon={DocumentDuplicateIcon} title="Tax Return" link="/taxreturn" />
                 <BottomIcon Icon={DocumentAddIcon} link="/uploadDocuments" title="Uploads" />
                 <BottomIcon Icon={UserIcon} link="/profile" title="My Profile" />

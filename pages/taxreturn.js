@@ -29,7 +29,7 @@ const plans = [
 ]
 
 
-function Taxreturn({ }) {
+function taxreturn({ }) {
   const [session, loading] = useSession();
   const [selected, setSelected] = useState([])
   console.log(selected)
@@ -62,4 +62,4 @@ function Taxreturn({ }) {
   )
 }
 
-export default withAuth(Taxreturn)
+export default withAuth(taxreturn)
