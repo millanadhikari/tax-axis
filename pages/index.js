@@ -8,8 +8,12 @@ import Dashboard from '../components/Dashboard';
 
 export default function Home() {
   const [session, loading] = useSession();
+  console.log(loading)
  const router = useRouter();
-
+  if(!session) return ( <div>
+    <Main/>
+    <Features/>
+    </div>)
 
   return (
     <div className=" bg-[#f6f8ff] h-screen ">
@@ -18,15 +22,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      {session ? 
       <Dashboard/>
-      :
-       
-      <div>
-      <Main/>
-      <Features/>
-      </div>
-}
+  
+
 
     </div>
   )
