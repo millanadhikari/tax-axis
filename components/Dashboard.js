@@ -1,4 +1,3 @@
-import withAuth from '../HOC/withAuth'
 
 function Dashboard() {
     return (
@@ -10,5 +9,5 @@ function Dashboard() {
 
 
 
-export default withAuth(Dashboard);
+export default Dashboard;
             
