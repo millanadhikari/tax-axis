@@ -4,16 +4,23 @@ import Features from '../components/Features'
 import {signIn, signOut, useSession} from 'next-auth/client'
 import { useRouter } from "next/router";
 import Dashboard from '../components/Dashboard';
+import Prices from '../components/Prices';
 
 
 export default function Home() {
   const [session, loading] = useSession();
   console.log(loading)
  const router = useRouter();
-  if(!session) return ( <div>
+ if(!session) {
+   return(
+     <>
     <Main/>
     <Features/>
-    </div>)
+    <Prices/>
+  </>
+)
+ }
+ 
 
   return (
     <div className=" bg-[#f6f8ff] h-screen ">
@@ -23,8 +30,6 @@ export default function Home() {
       </Head>
       
       <Dashboard/>
-  
-
 
     </div>
   )

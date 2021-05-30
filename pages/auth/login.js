@@ -1,10 +1,15 @@
+import { useEventCallback } from '@material-ui/core';
 import { getProviders, signIn, getSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
+import { useEffect } from 'react';
+import Link from 'next/link'
 
 
 
 
 function login({ providers, session }) {
+
+    
      return (
         <div className="flex flex-col text-center border sm:max-w-md sm:mx-auto sm:mt-20">
             <header className="py-4 border font-bold text-gray-800">Login or sign up</header>
@@ -31,16 +36,26 @@ function login({ providers, session }) {
 }
 
 export async function getServerSideProps(context) {
+    // const router = await useRouter()
+
     const {req, res} = context;
     const session = await getSession({req})
     const providers = await getProviders(context)
-    if(session) {
-        res.writeHead(302, {
-            Location:'/',
-        });
-        res.end()
-        return;
-    }
+        if(session) {
+           return {
+               redirect:{
+                   destination:'/',
+                   permanent:false,
+               }
+           }
+            // res.writeHead(302, {
+            //     Location:'/',
+            // });
+            // res.end()
+            // return
+        }
+
+
     return {
         props:{session, providers}
       
