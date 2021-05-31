@@ -16,7 +16,7 @@ function PriceCard({
     description10,
     description11, }) {
     return (
-        <div className="h-[45rem] border-1 bg-white min-w-[14rem] py-7 px-3 m-5">
+        <div className="h-[45rem] border-1 shadow-md bg-white min-w-[14rem] py-7 px-3 m-5">
             <h1 className="mb-2 text-2xl font-semibold">{name}</h1>
             <span className="border-t-2 border-blue-500 text-transparent h-2">dfdfdf</span>
             <h2 className="line-through text-gray-500 text-xl">{discounted}</h2>
@@ -25,7 +25,8 @@ function PriceCard({
                 <p>.00</p>
             </div>
             <p className="my-4">{title}</p>
-            <button className="rounded-3xl bg-blue-500 px-9 py-2 text-white font-semibold">Select</button>
+            <button className="rounded-3xl bg-blue-500 px-9 py-2 text-white font-semibold
+             focus:outline-none transition">Select</button>
 
             <div className="my-5 py-4 border-t-2">
                 <ul className="flex flex-col space-y-2 cursor-pointer">
