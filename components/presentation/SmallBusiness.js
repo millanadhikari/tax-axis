@@ -4,7 +4,7 @@ const data = [
     { 
         name: "Simple Start",
         discounted: 22,
-        price: 15,
+        price: '$15',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
         description2: 'Send unilimited invoices & quotes',
@@ -17,7 +17,7 @@ const data = [
     { 
         name: "Essentials",
         discounted: 22,
-        price: 85,
+        price: '$85',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
         description2: 'Send unilimited invoices & quotes',
@@ -35,7 +35,7 @@ const data = [
     { 
         name: "Premium",
         discounted: 22,
-        price: 45,
+        price: '$45',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
         description2: 'Send unilimited invoices & quotes',

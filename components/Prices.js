@@ -37,8 +37,8 @@ function Prices({ datas }) {
                 </div>
             </div>
 
-                <div className="flex flex-col justify-center sm:mx-auto text-gray-500 text-sm bg-gray-100">
-                    <div className="flex justify-center space-x-5 my-7">
+                <div className="flex flex-col w-screen justify-center sm:mx-auto text-gray-500 text-sm bg-gray-100">
+                    <div className="flex justify-center w-full space-x-5 my-7">
                         <h1 className="text-center">Swipe to see plans</h1>
                         <p className="animate-ping">>></p>
                     </div>
