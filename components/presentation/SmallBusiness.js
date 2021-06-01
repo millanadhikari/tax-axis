@@ -2,12 +2,12 @@ import PriceCard from "./PriceCard"
 
 const data = [
     { 
-        name: "Simple Start",
-        discounted: 22,
-        price: '$15',
+        name: "Company",
+        discounted: 90,
+        price: '$450',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
-        description2: 'Send unilimited invoices & quotes',
+        description2: 'Financial Report',
         description3: 'Snap & Store receipts',
         description4: 'Track kilometres',
         description5: 'Send unilimited invoices & quotes',
@@ -15,9 +15,9 @@ const data = [
         description7: 'Insights & reports'
     }, 
     { 
-        name: "Essentials",
+        name: "Trust",
         discounted: 22,
-        price: '$85',
+        price: '$450',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
         description2: 'Send unilimited invoices & quotes',
@@ -33,9 +33,9 @@ const data = [
 
     }, 
     { 
-        name: "Premium",
+        name: "Partnership",
         discounted: 22,
-        price: '$45',
+        price: '$340',
         title: "Save 30% for 3 months",
         description1: 'Track income & expenses',
         description2: 'Send unilimited invoices & quotes',

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import SelfEmployed from './presentation/SelfEmployed'
 import SmallBusiness from './presentation/SmallBusiness'
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 const type = [
     { name: 'Small' },
@@ -19,9 +20,15 @@ function Prices({ datas }) {
     return (
         <div className="my-10 mx-1">
             <h1 className="text-2xl font-extrabold text-center">Build the right plan for your business</h1>
-            <div className="flex justify-center space-x-7 my-5">
-                <p>Free unilimited support</p>
+            <div className="flex justify-center space-x-7 my-9">
+                <div className="flex space-x-2">
+                    <CheckCircleIcon style={{color:'#3882f6'}} color="bg-blue-500"/>
+                    <p>Free unilimited support</p>
+                </div>
+                <div className="flex space-x-2">
+                    <CheckCircleIcon style={{color:'#3882f6'}}/>
                 <p>Cancel anytime</p>
+                </div>
             </div>
             <div className="flex space-x-3 w-full sm:justify-center">
                 <div onClick={() => setSelected('Small')}

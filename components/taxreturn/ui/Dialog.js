@@ -25,7 +25,7 @@ const solutions = [
 
 export default function Dialog({icon}) {
   return (
-    <div className="w-full px-4 relative ">
+    <div className="px-4">
       <Popover className="relative">
         {({ open }) => (
           <>
@@ -46,7 +46,7 @@ export default function Dialog({icon}) {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="absolute z-10 popover_box w-60 left-[-30px] transform -translate-x-1/2 ">
+              <Popover.Panel className="absolute z-10 popover_box w-60 left-[-60px] transform -translate-x-1/2 ">
               <span className="flex items-center mb-2">
                         <span className="text-sm font-medium text-gray-900">
                          How can I find my tax file number?

@@ -6,6 +6,7 @@ import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 
 import withAuth from '../HOC/withAuth'
+import Loading from '../components/taxreturn/ui/Loading'
 const plans = [
   {
     name: '2019',
@@ -30,13 +31,30 @@ const plans = [
 
 
 function taxreturn({ }) {
-  const [session, loading] = useSession();
+  const [session] = useSession();
   const [selected, setSelected] = useState([])
   console.log(selected)
 
   const router = useRouter()
 
+  const [loading, setLoading] = useState(false)
+
+
+  useEffect(() => {
+      setLoading(true)
+      setTimeout(() => {
+          setLoading(false)
+      }, 2000)
+      window.scrollTo(0, 0)
+
+  }, [])
+
+
+  
+
   return (
+    <div className="h-screen">
+      {loading ? <Loading/> : 
     <div className="h-screen bg-white-400 flex flex-col w-full max-w-lg mx-auto pt-5">
       {/* <Welcome /> */}
       <div className="ml-9">
@@ -58,6 +76,8 @@ function taxreturn({ }) {
 
 
 
+    </div>
+}
     </div>
   )
 }

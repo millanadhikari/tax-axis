@@ -30,8 +30,7 @@ function Navbar() {
                         <h2>How to?</h2>
                     </div>
                     <div className="flex gap-5 ">
-                        <button onClick={() => router.push('/auth/login')} className="btn hover:bg-[#2c6ac7] hover:text-white block" >Login</button>
-                        <button className="btn btn--primary ">Sign Up</button>
+                        <button onClick={() => router.push('/auth/login')} className="btn px-6 hover:bg-[#2c6ac7] rounded-2xl hover:text-white block" >Login</button>
                     </div>
                 </div>
 

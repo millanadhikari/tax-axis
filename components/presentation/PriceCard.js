@@ -16,12 +16,13 @@ function PriceCard({
     description10,
     description11, }) {
     return (
-        <div className="h-[45rem] border-1 shadow-md bg-white min-w-[14rem] py-7 px-3 m-5">
+        <div className="h-[45rem] border-1 shadow-md bg-white min-w-[14rem] max-w-[14rem] py-7 px-3 m-5
+        sm: transition sm:duration-200 sm:transform sm:ease-in sm:hover:scale-105">
             <h1 className="mb-2 text-2xl font-semibold">{name}</h1>
             <span className="border-t-2 border-blue-500 text-transparent h-2">dfdfdf</span>
             <h2 className="line-through text-gray-500 text-xl">{discounted}</h2>
             <div className="flex text-gray-800">
-                <h1 className="text-5xl font-extrabold ">{price}</h1>
+                <h1 className="text-4xl font-extrabold ">{price}</h1>
                 <p>.00</p>
             </div>
             <p className="my-4">{title}</p>

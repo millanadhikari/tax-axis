@@ -2,48 +2,44 @@ import PriceCard from "./PriceCard"
 
 const data = [
     { 
-        name: "Self Start",
-        discounted: 52,
-        price: '$250',
-        title: "Save 30% for 3 months",
-        description1: 'Track income & expenses',
-        description2: 'Send unilimited invoices & quotes',
-        description3: 'Snap & Store receipts',
-        description4: 'Track kilometres',
-        description5: 'Send unilimited invoices & quotes',
-        description6: 'Connect your bank',
-        description7: 'Insights & reports'
+        name: "Individual Tax",
+        discounted: 20,
+        price: '$60',
+        title: "2010 to 2021 Financial Year",
+        description1: 'Email Support',
+        description2: 'Unilimited number of Income (Except for Rental Property Income, Sales and ABN Income)',
+        description3: 'Unlimited Number of Deductions',
+        description4: 'Unilimited number of Share Sales',
+        description5: 'Unilimited number of Investment Income',
+        description6: 'Unilimited Number of Centrelink Payment',
+        description7: 'Unilimited Number of Tax Offset'
     }, 
     { 
-        name: "Silver",
+        name: "Sole Trader",
         discounted: 80,
-        price: '$300',
+        price: '$150',
         title: "Save 30% for 3 months",
-        description1: 'Track income & expenses',
-        description2: 'Send unilimited invoices & quotes',
-        description3: 'Snap & Store receipts',
-        description4: 'Track kilometres',
-        description5: 'Send unilimited invoices & quotes',
-        description6: 'Connect your bank',
-        description7: 'Insights & reports',
-        description8: 'Manage suppliers and bills',
-        description9: 'Multi-currency',
-        description10: 'Set-up recurring transactions',
-        description11: 'Manage users (up to 3)'
+        description1: 'Email Support',
+        description2: 'Unilimited number of Income (Except for Rental Property Income, Sales and ABN Income)',
+        description3: 'Unlimited Number of Deductions',
+        description4: 'Unilimited number of Share Sales',
+        description5: 'Unilimited number of Investment Income',
+        description6: 'Unilimited Number of Centrelink Payment',
+        description7: 'Unilimited Number of Tax Offset'
 
     }, 
     { 
-        name: "Gold",
-        discounted: 85,
-        price: '$450',
+        name: "Investment",
+        discounted: 60,
+        price: '$200',
         title: "Save 30% for 3 months",
-        description1: 'Track income & expenses',
-        description2: 'Send unilimited invoices & quotes',
-        description3: 'Snap & Store receipts',
-        description4: 'Track kilometres',
-        description5: 'Send unilimited invoices & quotes',
-        description6: 'Connect your bank',
-        description7: 'Insights & reports'
+        description1: 'Email Support',
+        description2: 'Unilimited number of Income (Except for Rental Property Income, Sales and ABN Income)',
+        description3: 'Unlimited Number of Deductions',
+        description4: 'Unilimited number of Share Sales',
+        description5: 'Unilimited number of Investment Income',
+        description6: 'Unilimited Number of Centrelink Payment',
+        description7: 'Unilimited Number of Tax Offset'
     }, 
     
 ]

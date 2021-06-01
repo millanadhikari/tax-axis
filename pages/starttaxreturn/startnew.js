@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import { useForm, useStep, Controller} from "react-hooks-helper"
 import BasicDetails from '../../components/taxreturn/BasicDetails'
+import IndividualTwo from '../../components/taxreturn/taxform/IndividualTwo'
 import withAuth from '../../HOC/withAuth'
 
 
@@ -55,6 +56,8 @@ function Details() {
     switch (step.id) {
         case "chooseservice":
             return <><BasicDetails {...props} /> </>;
+        case "jobdescription":
+            return <><IndividualTwo {...props} /></>
    
       
     }
@@ -64,7 +67,6 @@ function Details() {
         <div className = "">
            <div>
          
-
            </div>
         </div>
     )

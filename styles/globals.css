@@ -14,7 +14,11 @@
         sm:max-w-2xl sm:mx-auto lg:max-w-3xl
     }
     .popover_box {
-        @apply bg-white text-[#464775] gap-4 p-4 rounded-md shadow-md
+        @apply bg-white text-[#464775] gap-4 p-4 rounded-md shadow-md 
         
+    }
+    .input1 {
+        @apply ring-1 ring-blue-500 rounded-sm w-full focus:outline-none bg-blue-100 py-1
+        px-2 sm:max-w-md
     }
 }
