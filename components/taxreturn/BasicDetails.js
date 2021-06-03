@@ -76,9 +76,9 @@ function BasicDetails({ navigation }) {
 
 
     return (
-        <div className="h-screen w-full">
+        <div className="h-screen w-full scrollbar-none">
             {loading ? <Loading /> :
-                <div className="box h-screen gap-2 m-5 overflow-y-auto sm:mx-auto sm:p-8 pb-10">
+                <div className="box gap-2 m-5 overflow-y-auto scrollbar-hide sm:mx-auto sm:p-8 pb-5">
                     <h1 className="text-left text-2xl">Your Tax Return</h1>
                     <h2 className="text-bold">Let's start with the basics details</h2>
                     <form>

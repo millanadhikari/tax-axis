@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Dashboard from '../components/Dashboard';
 import Prices from '../components/Prices';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 
 
 export default function Home() {
@@ -16,7 +17,8 @@ export default function Home() {
    return(
      <>
     <Main/>
-    <Features/>
+    {/* <Features/> */}
+    {/* <Banner/> */}
     <Prices/>
     <Footer/>
   </>

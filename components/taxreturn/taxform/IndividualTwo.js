@@ -21,7 +21,7 @@ function IndividualTwo({ navigation }) {
     return (
         <div className="h-screen ">
             {loading ? <Loading /> :
-            <div className="box h-screen overflow-y-auto">
+            <div className="box h-screen overflow-y-auto scrollbar-hide">
                 <p onClick={() => navigation.previous()} className="text-gray-500 cursor-pointer">Back</p>
                 <h1 className="text-left text-2xl">My Details</h1>
                 <div className="flex flex-col space-y-1">
@@ -129,7 +129,7 @@ function IndividualTwo({ navigation }) {
                         <h2>Home/Work Phone Number</h2>
                         <input className="input1" />
                     </div>
-                    <div className="flex flex-col space-y-1">
+                    <div className="flex flex-col space-y-1 mb-2">
                         <h2>Gender</h2>
                         <form className="flex space-x-5">
                             <div className="flex items-center space-x-2">
@@ -142,7 +142,7 @@ function IndividualTwo({ navigation }) {
                             </div>
                         </form>
                     </div>
-                    <button onClick={()=> navigation.next()} className="ring-1 bg-blue-500 text-white py-2 text-lg font-semibold cursor-pointer hover:bg-blue-400">Next</button>
+                    <button onClick={()=> navigation.next()} className="my-10 ring-1 bg-blue-500 text-white py-2 text-lg font-semibold cursor-pointer hover:bg-blue-400">Next</button>
 
                 </div>
 

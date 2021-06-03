@@ -1,6 +1,7 @@
-import React, {useEffect} from 'react'
-import { useForm, useStep, Controller} from "react-hooks-helper"
+import React, { useEffect } from 'react'
+import { useForm, useStep, Controller } from "react-hooks-helper"
 import BasicDetails from '../../components/taxreturn/BasicDetails'
+import IndividualThree from '../../components/taxreturn/taxform/IndividualThree'
 import IndividualTwo from '../../components/taxreturn/taxform/IndividualTwo'
 import withAuth from '../../HOC/withAuth'
 
@@ -21,10 +22,10 @@ const defaultData = {
     bedrooms: 0,
     bathrooms: 1,
     totalPrice: 149,
-    studyRoom:true,
-    laundry:false,
+    studyRoom: true,
+    laundry: false,
     separateToilet: false,
-    balcony:false
+    balcony: false
 }
 
 const steps = [
@@ -40,12 +41,12 @@ const steps = [
 function Details() {
 
     const [formData, setForm] = useForm(defaultData);
-    const {register, control} = useForm()
-    const {step, navigation} = useStep({
+    const { register, control } = useForm()
+    const { step, navigation } = useStep({
         steps,
-        initialStep:0
-    })  
-    
+        initialStep: 0
+    })
+
     useEffect(() => {
         console.log(step)
         console.log(formData.firstName)
@@ -58,16 +59,18 @@ function Details() {
             return <><BasicDetails {...props} /> </>;
         case "jobdescription":
             return <><IndividualTwo {...props} /></>
-   
-      
+        case "names":
+            return <><IndividualThree {...props} /></>
+
+
     }
     // <QuoteCreater {...props} />
 
     return (
-        <div className = "">
-           <div>
-         
-           </div>
+        <div className="">
+            <div>
+
+            </div>
         </div>
     )
 }
