@@ -7,6 +7,7 @@ import Dashboard from '../components/Dashboard';
 import Prices from '../components/Prices';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
+import Reviews from '../components/presentation/carousel/Reviews';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
    return(
      <>
     <Main/>
+    <Reviews/>
     {/* <Features/> */}
     {/* <Banner/> */}
     <Prices/>

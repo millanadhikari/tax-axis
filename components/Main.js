@@ -5,7 +5,7 @@ import Banner from './Banner';
 
 function Main() {
     return (
-        <div className="mt-2 sm:flex sm:justify-center max-w-full">
+        <div className="mt-2 sm:flex sm:justify-center max-w-full sm:max-w-full">
         <div className="z-1 mx-3 pt-5 pb-8 flex flex-col gap-3 text-left max-w-md ">
             <h1 className="font-bold text-2xl tracking-wide text-gray-700 lg:text-4xl">We Help Businesses Get Tax Faster And Make Accounting Easier</h1>
 
