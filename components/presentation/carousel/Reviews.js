@@ -5,7 +5,7 @@ import Review from "./Review";
 
 function Reviews() {
     return (
-        <div className="max-w-3xl sm:mx-auto text-center m-1">
+        <div className="max-w-3xl sm:mx-auto text-center m-1 my-4">
             <h1 className="text-2xl font-semibold">TaxAxis is trusted by thousands of companies</h1>
             <Carousel
              autoPlay
