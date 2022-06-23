@@ -8,6 +8,7 @@ import Prices from '../components/Prices';
 import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import Reviews from '../components/presentation/carousel/Reviews';
+import Services from '../components/Services';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
    return(
      <>
     <Main/>
+    <Services/>
     <Reviews/>
     {/* <Features/> */}
     {/* <Banner/> */}
