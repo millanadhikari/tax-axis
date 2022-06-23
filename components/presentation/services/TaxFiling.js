@@ -5,7 +5,7 @@ import AlignVerticalBottomOutlinedIcon from '@mui/icons-material/AlignVerticalBo
 const TaxFiling = () => {
     return (
         <div className="mx-4 max-w-[85rem] md:mx-4 xl:mx-auto my-8 md:flex ">
-            <img src="/taxFiling1.PNG" className="hidden md:inline w-100 h-100" />
+            <img src="/taxfiling1.PNG" className="hidden md:inline w-100 h-100" />
 
             <div className="">
                 <div className="flex flex-col items-center bg-blue-100 align-center w-[40px] text-md font-semibold text-blue-500 rounded-md ">
