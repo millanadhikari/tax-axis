@@ -19,7 +19,7 @@ const Bookkeeping = () => {
 
             </div>
             <div>
-                <img src="/bookkeeping.png" className="w-100 h-100"/>
+                <img src="/bookkeeping.PNG" className="w-100 h-100"/>
                 <h2 className=" md:hidden mt-5 font-semibold font-sm text-red-600">Learn More</h2>
 
             </div>
